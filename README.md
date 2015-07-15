@@ -8,7 +8,9 @@
     ----------------------------------------------------------------- 
 
 ## Introduction
-The code contained in this repo is a modified version of a tutorial by [uploaders](https://github.com/uploaders). Most of the code used here stems directly from the tutorial found [here](https://github.com/uploaders/aws-sdk-rails-4.2)
+This project aims to learn how to upload files from a ruby app into an AWS S3 bucket, while securing my AWS credentials despite using the free online IDE Cloud 9.
+
+*The code contained in this repo is a modified version of a tutorial by [uploaders](https://github.com/uploaders). Most of the code used here stems directly from the tutorial found [here](https://github.com/uploaders/aws-sdk-rails-4.2)*
 
 The intention was to modify the code in order to
 - host the app (with all it's code) on Cloud9 publicly, while hiding the AWS Environment Variables

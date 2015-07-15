@@ -21,6 +21,10 @@ The intention was to modify the code in order to
 
 ## hiding files from public cloud9 app:
 If you don't want your file to be visible by the public, it has to live outside of the *workspace* directory in Cloud9.
+In order to see this workspace in cloud 9, click on the **settings** icon in he corner of the file navigation bar, and select to *show hidden files* and *Show Home in Favorites*
+![alt tag](https://cloud.githubusercontent.com/assets/3217286/8710510/4923a492-2b18-11e5-8456-ff175900e50d.png)
+
+
 I created a file called *secrets.json* and placed it in a folder called sensitive_data in teh root directory of C9.
 ![alt tag](https://cloud.githubusercontent.com/assets/3217286/8709503/a280504c-2b10-11e5-916c-d27529bfe050.JPG)
 

@@ -35,8 +35,8 @@ secrets.json contains the following code:
 /*
 //INSTRUCTIONS ON HOW TO READ THESE INTO config/environment.rb
     file = File.read('../sensitive_data/secrets.json')
-    data_hash = JSON.parse(file)
-    data_hash['AWS']['someKey']
+    aws_creds = JSON.parse(file)
+    aws_creds['AWS']['aws_access_key_id']
 */
 
 {"AWS":{"aws_access_key_id":"InsertAWSKeyID","aws_secret_access_key":"InsertAWSSecretKey"}}

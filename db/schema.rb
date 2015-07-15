@@ -20,11 +20,4 @@ ActiveRecord::Schema.define(version: 20150715184323) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "file_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

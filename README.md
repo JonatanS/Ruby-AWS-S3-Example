@@ -8,7 +8,9 @@
     ----------------------------------------------------------------- 
 
 ## Introduction
-The code contained in this repo is a modified version of a tutorial by [uploaders](https://github.com/uploaders). Most of the code used here stems directly from the tutorial found [here](https://github.com/uploaders/aws-sdk-rails-4.2)
+This project aims to learn how to upload files from a ruby app into an AWS S3 bucket, while securing my AWS credentials despite using the free online IDE Cloud 9.
+
+*The code contained in this repo is a modified version of a tutorial by [uploaders](https://github.com/uploaders). Most of the code used here stems directly from the tutorial found [here](https://github.com/uploaders/aws-sdk-rails-4.2)*
 
 The intention was to modify the code in order to
 - host the app (with all it's code) on Cloud9 publicly, while hiding the AWS Environment Variables
@@ -21,6 +23,10 @@ The intention was to modify the code in order to
 
 ## hiding files from public cloud9 app:
 If you don't want your file to be visible by the public, it has to live outside of the *workspace* directory in Cloud9.
+In order to see this workspace in cloud 9, click on the **settings** icon in he corner of the file navigation bar, and select to *show hidden files* and *Show Home in Favorites*
+
+![alt tag](https://cloud.githubusercontent.com/assets/3217286/8710510/4923a492-2b18-11e5-8456-ff175900e50d.png)
+
 I created a file called *secrets.json* and placed it in a folder called sensitive_data in teh root directory of C9.
 ![alt tag](https://cloud.githubusercontent.com/assets/3217286/8709503/a280504c-2b10-11e5-916c-d27529bfe050.JPG)
 
@@ -29,8 +35,8 @@ secrets.json contains the following code:
 /*
 //INSTRUCTIONS ON HOW TO READ THESE INTO config/environment.rb
     file = File.read('../sensitive_data/secrets.json')
-    data_hash = JSON.parse(file)
-    data_hash['AWS']['someKey']
+    aws_creds = JSON.parse(file)
+    aws_creds['AWS']['aws_access_key_id']
 */
 
 {"AWS":{"aws_access_key_id":"InsertAWSKeyID","aws_secret_access_key":"InsertAWSSecretKey"}}
